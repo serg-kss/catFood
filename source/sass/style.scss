@@ -25,11 +25,13 @@
 @import "blocks/custom-toggle";
 @import "blocks/custom-select";
 @import "blocks/header";
+@import "blocks/main";
 
 // ---------------------------------
 
 //styles
 @import "header-media";
+@import "main-media";
 
 // ❗❗❗ запрещено использовать изображения в css, касается как jpg \ png, так и svg
 

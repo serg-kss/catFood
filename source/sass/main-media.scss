@@ -1,0 +1,62 @@
+@include mobile {
+    .banner {
+        width: 100%;
+        display: flex;
+        margin: 0;
+        padding: 0;
+        flex-direction: column;
+        background-image: url(../img/png/index-background-mobile.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        .banner__title {
+            width: 100%;
+            font-size: 36px;
+            line-height: 36px;
+            color: $color-default-white;
+            font-weight: 400;
+            font-family: "Oswald";
+            text-align: center;
+        }
+        .banner__text {
+            width: 100%;
+            padding-bottom: 30%;
+            font-size: 14px;
+            line-height: 14px;
+            text-transform: uppercase;
+            color: $color-default-white;
+            font-weight: 400;
+            font-family: "Oswald";
+            text-align: center;
+        }
+    }
+    .food {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        top: -80px;
+        .food__link{
+            width: 85.50%;
+            margin-left: 6.25%;
+            margin-right: 6.25%;
+            padding: 5%;
+            background-color: $color-apple;
+            font-size: 14px;
+            line-height: 18px;
+            text-transform: uppercase;
+            color: $color-default-white;
+            font-weight: 400;
+            font-family: "Oswald";
+            text-align: center;
+            &:hover {
+                background-color: $color-limeade;
+            }
+            &:active {
+                color:rgba($color: $color-default-white, $alpha: 0.302)
+            }
+        }
+    }
+}

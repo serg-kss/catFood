@@ -1190,6 +1190,29 @@ a {
   padding-bottom: 3.5%;
 }
 
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
 @media (min-width: 320px) and (max-width: 767px) {
   .header {
     -webkit-box-orient: vertical;
@@ -1389,6 +1412,82 @@ a {
   }
   .header__wrapperNav .header__list .header__point:not(:last-child) {
     margin-right: 22px;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .banner {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-image: url(../img/png/index-background-mobile.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .banner .banner__title {
+    width: 100%;
+    font-size: 36px;
+    line-height: 36px;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Oswald";
+    text-align: center;
+  }
+  .banner .banner__text {
+    width: 100%;
+    padding-bottom: 30%;
+    font-size: 14px;
+    line-height: 14px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Oswald";
+    text-align: center;
+  }
+  .food {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: relative;
+    top: -80px;
+  }
+  .food .food__link {
+    width: 85.5%;
+    margin-left: 6.25%;
+    margin-right: 6.25%;
+    padding: 5%;
+    background-color: #68b738;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Oswald";
+    text-align: center;
+  }
+  .food .food__link:hover {
+    background-color: #5EAA2F;
+  }
+  .food .food__link:active {
+    color: rgba(255, 255, 255, 0.302);
   }
 }
 /* @mixin hover-focus {
