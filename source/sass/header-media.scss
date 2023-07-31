@@ -1,0 +1,142 @@
+@include mobile {
+    .header {
+        flex-direction: column;
+        .header__wrapperLogo {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            
+            .header__title {
+                visibility: visible;
+            }
+        }
+        .header__wrapperNav {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .header__list {
+                display: none;
+                width: 100%;
+                align-items: center;
+                flex-direction: column;
+                .header__point {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    .header__link {
+                        width: 281px;
+                        height: 40px;
+                        font-size: 20px;
+                        line-height: 20px;
+                        text-transform: uppercase;
+                        color: $color-black;
+                        font-weight: 500;
+                        font-family: "Oswald";
+                        text-align: center;
+                    }
+                }
+
+                &:target {
+                    display: flex;
+                }
+            }
+        }
+    }
+}
+
+@include tablet {
+    .header {
+        .header__wrapperLogo {
+            width: 30%;
+            display: flex;
+            align-items: center;
+            .header__title {
+                visibility: hidden;
+            }
+            .header__burger {
+                visibility: hidden;
+            }
+        }
+        .header__wrapperNav {
+            width: 70%;
+            display: flex;
+            align-items: center;
+            .header__list {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .header__point {
+                    .header__link {
+                        font-size: 18px;
+                        line-height: 25px;
+                        text-transform: uppercase;
+                        color: $color-nero;
+                        font-weight: 400;
+                        font-family: "Oswald";
+                        &:hover {
+                            opacity: 0.600;
+                        }
+                        &:active {
+                            opacity: 0.302;
+                        }
+                    }
+                    .header__link--active {
+                        border-bottom: 1px solid $color-apple;
+                    }
+                    &:not(:last-child){
+                        margin-right: 30px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include laptop {
+    .header__wrapperLogo {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        .header__title {
+            visibility: hidden;
+        }
+        .header__burger {
+            visibility: hidden;
+        }
+    }
+    .header__wrapperNav {
+        display: flex;
+        align-items: center;
+        width: 50%;
+        .header__list {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: $color-apple;
+            .header__point {
+                .header__link {
+                    font-size: 20px;
+                    line-height: 25px;
+                    text-transform: uppercase;
+                    color: $color-default-white;
+                    font-weight: 400;
+                    font-family: "Oswald";
+                    &:hover {
+                        opacity: 0.600;
+                    }
+                    &:active {
+                        opacity: 0.302;
+                    }
+                }
+                .header__link--active {
+                    border-bottom: 2px solid $color-default-white;
+                }
+                &:not(:last-child){
+                    margin-right: 22px;
+                }
+            }
+        }
+    }
+}

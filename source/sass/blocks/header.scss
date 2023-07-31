@@ -1,0 +1,21 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: fit-content;
+    margin: 0;
+    padding: 0;
+
+    .header__wrapperLogo {
+        padding-left: 6.25%;
+        padding-top: 3.5%;
+        padding-bottom: 3.5%;
+    }
+    .header__wrapperNav {
+        padding-right: 6.25%;
+        padding-top: 3.5%;
+        padding-bottom: 3.5%;
+        
+    }
+}
