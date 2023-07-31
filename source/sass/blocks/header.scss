@@ -7,15 +7,10 @@
     margin: 0;
     padding: 0;
 
-    .header__wrapperLogo {
+    .header__wrapperLogo, .header__wrapperNav {
         padding-left: 6.25%;
-        padding-top: 3.5%;
-        padding-bottom: 3.5%;
-    }
-    .header__wrapperNav {
         padding-right: 6.25%;
         padding-top: 3.5%;
         padding-bottom: 3.5%;
-        
     }
 }

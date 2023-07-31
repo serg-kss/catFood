@@ -1183,12 +1183,8 @@ a {
   margin: 0;
   padding: 0;
 }
-.header .header__wrapperLogo {
+.header .header__wrapperLogo, .header .header__wrapperNav {
   padding-left: 6.25%;
-  padding-top: 3.5%;
-  padding-bottom: 3.5%;
-}
-.header .header__wrapperNav {
   padding-right: 6.25%;
   padding-top: 3.5%;
   padding-bottom: 3.5%;
@@ -1202,7 +1198,7 @@ a {
             flex-direction: column;
   }
   .header .header__wrapperLogo {
-    width: 100%;
+    width: 90%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1240,6 +1236,7 @@ a {
             flex-direction: column;
   }
   .header .header__wrapperNav .header__list .header__point {
+    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1249,9 +1246,22 @@ a {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    border-top: 1px solid grey;
+    padding-left: 6.25%;
+    padding-right: 6.25%;
+    padding-top: 3.5%;
+    padding-bottom: 3.5%;
   }
   .header .header__wrapperNav .header__list .header__point .header__link {
-    width: 281px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     height: 40px;
     font-size: 20px;
     line-height: 20px;
@@ -1259,7 +1269,6 @@ a {
     color: #111111;
     font-weight: 500;
     font-family: "Oswald";
-    text-align: center;
   }
   .header .header__wrapperNav .header__list:target {
     display: -webkit-box;
