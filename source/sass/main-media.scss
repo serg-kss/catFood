@@ -29,6 +29,9 @@
             font-family: "Oswald";
             text-align: center;
         }
+        .banner__link {
+            visibility: hidden;
+        }
     }
     .food {
         width: 100%;
@@ -56,6 +59,136 @@
             }
             &:active {
                 color:rgba($color: $color-default-white, $alpha: 0.302)
+            }
+        }
+    }
+}
+
+@include tablet {
+    .banner {
+        width: 100%;
+        display: flex;
+        justify-content: start;
+        margin: 0;
+        padding: 0;
+        flex-direction: column;
+        .banner__title {
+            width: 420px;
+            padding-left: 6.25%;
+            font-size: 60px;
+            line-height: 60px;
+            color: $color-black;
+            font-weight: 400;
+            font-family: "Oswald";
+        }
+        .banner__text {
+            padding-left: 6.25%;
+            font-size: 20px;
+            line-height: 20px;
+            text-transform: uppercase;
+            color: $color-black;
+            font-weight: 400;
+            font-family: "Oswald";
+        }
+        .banner__link {
+            visibility: hidden;
+        }
+    }
+    .food {
+        width: 100%;
+        display: flex;
+        margin: 0;
+        padding: 0;
+        flex-direction: column;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        .food__picture {
+            width: 709px;
+            height: 609px;
+        }
+        .food__link {
+            margin-left: 6.25%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: $color-apple;
+            padding: 2%;
+            font-size: 20px;
+            line-height: 20px;
+            text-transform: uppercase;
+            color: $color-default-white;
+            font-weight: 400;
+            font-family: "Oswald";
+            z-index: 100;
+        }
+    }
+}
+@include laptop {
+    .main__wrapper {
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        top: 0;
+        left: 0;
+        .banner {
+            width: 50%;
+            display: flex;
+            justify-content: start;
+            margin: 0;
+            padding: 0;
+            flex-direction: column;
+            .banner__title {
+                width: 420px;
+                font-size: 60px;
+                color: $color-black;
+                font-weight: 400;
+                font-family: "Oswald";
+                padding-left: 12.25%;
+                z-index: 100;
+            }
+            .banner__text {
+                font-size: 20px;
+                line-height: 20px;
+                text-transform: uppercase;
+                color: $color-black;
+                font-weight: 400;
+                font-family: "Oswald";
+                padding-left: 12.25%;
+                z-index: 100;
+            }
+            .banner__link {
+                width: 50%;
+                background-color: $color-apple;
+                font-size: 20px;
+                text-transform: uppercase;
+                color: $color-default-white;
+                font-weight: 400;
+                font-family: "Oswald";
+                padding: 2.5%;
+                margin-left: 12.25%;
+                text-align: center;
+                margin-top: 5%;
+            }
+        }
+        .food {
+            width: 50%;
+            height: 696px;
+            background-image: url(../img/png/index-background-mobile.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            position: relative;
+            .food__picture {
+               position: relative;
+               left: -300px;
+               top: 200px;
+               .food__img {
+                width: 75%;
+               }
+            }
+            .food__link {
+                visibility: hidden;
             }
         }
     }

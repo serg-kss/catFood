@@ -1210,6 +1210,25 @@ a {
   height: fit-content;
   margin: 0;
   padding: 0;
+}
+
+.main__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  margin: 0;
+  padding: 0;
   position: relative;
 }
 
@@ -1380,6 +1399,7 @@ a {
         -ms-flex-align: center;
             align-items: center;
     width: 50%;
+    z-index: 100;
   }
   .header__wrapperNav .header__list {
     display: -webkit-box;
@@ -1391,7 +1411,6 @@ a {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    background-color: #68b738;
   }
   .header__wrapperNav .header__list .header__point .header__link {
     font-size: 20px;
@@ -1451,6 +1470,9 @@ a {
     font-family: "Oswald";
     text-align: center;
   }
+  .banner .banner__link {
+    visibility: hidden;
+  }
   .food {
     width: 100%;
     display: -webkit-box;
@@ -1488,6 +1510,163 @@ a {
   }
   .food .food__link:active {
     color: rgba(255, 255, 255, 0.302);
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .banner {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    margin: 0;
+    padding: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .banner .banner__title {
+    width: 420px;
+    padding-left: 6.25%;
+    font-size: 60px;
+    line-height: 60px;
+    color: #111111;
+    font-weight: 400;
+    font-family: "Oswald";
+  }
+  .banner .banner__text {
+    padding-left: 6.25%;
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #111111;
+    font-weight: 400;
+    font-family: "Oswald";
+  }
+  .banner .banner__link {
+    visibility: hidden;
+  }
+  .food {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: relative;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .food .food__picture {
+    width: 709px;
+    height: 609px;
+  }
+  .food .food__link {
+    margin-left: 6.25%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #68b738;
+    padding: 2%;
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Oswald";
+    z-index: 100;
+  }
+}
+@media (min-width: 1024px) {
+  .main__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .main__wrapper .banner {
+    width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    margin: 0;
+    padding: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main__wrapper .banner .banner__title {
+    width: 420px;
+    font-size: 60px;
+    color: #111111;
+    font-weight: 400;
+    font-family: "Oswald";
+    padding-left: 12.25%;
+    z-index: 100;
+  }
+  .main__wrapper .banner .banner__text {
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #111111;
+    font-weight: 400;
+    font-family: "Oswald";
+    padding-left: 12.25%;
+    z-index: 100;
+  }
+  .main__wrapper .banner .banner__link {
+    width: 50%;
+    background-color: #68b738;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Oswald";
+    padding: 2.5%;
+    margin-left: 12.25%;
+    text-align: center;
+    margin-top: 5%;
+  }
+  .main__wrapper .food {
+    width: 50%;
+    height: 696px;
+    background-image: url(../img/png/index-background-mobile.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+  }
+  .main__wrapper .food .food__picture {
+    position: relative;
+    left: -300px;
+    top: 200px;
+  }
+  .main__wrapper .food .food__picture .food__img {
+    width: 75%;
+  }
+  .main__wrapper .food .food__link {
+    visibility: hidden;
   }
 }
 /* @mixin hover-focus {
