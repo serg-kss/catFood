@@ -1,0 +1,27 @@
+@include mobile {
+ .footer {
+    .footer__picture {
+        padding: 5%;
+        width: 128px;
+        height: 24px;
+    }
+    .footer__list {
+        width: 87.5%;
+        padding-left: 6.25%;
+        padding-right: 6.25%;
+        border-top: 1px solid grey;
+        border-bottom: 1px solid grey;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+ }
+}
+
+@include tablet {
+
+}
+
+@include laptop {
+
+}

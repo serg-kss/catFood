@@ -26,12 +26,14 @@
 @import "blocks/custom-select";
 @import "blocks/header";
 @import "blocks/main";
+@import "blocks/footer";
 
 // ---------------------------------
 
 //styles
 @import "header-media";
 @import "main-media";
+@import "media/footer-media";
 
 // ❗❗❗ запрещено использовать изображения в css, касается как jpg \ png, так и svg
 
