@@ -1,25 +1,86 @@
 @include mobile {
  .footer {
-    .footer__picture {
-        padding: 5%;
-        width: 128px;
-        height: 24px;
+    a {
+        padding: 10%;
+        .footer__picture {
+            width: 128px;
+            height: 24px;
+            &:hover {
+                opacity: .8;
+            }
+            &:active {
+                opacity: .6;
+            }
+        }  
     }
+    
     .footer__list {
         width: 87.5%;
         padding-left: 6.25%;
         padding-right: 6.25%;
-        border-top: 1px solid grey;
-        border-bottom: 1px solid grey;
+        border-top: 1px solid rgb(210, 210, 210);
+        border-bottom: 1px solid rgb(210, 210, 210);
         display: flex;
         align-items: center;
+        justify-content: center;
+        .footer__point {
+            padding: 10%;
+        }
+    }
+    .footer__container {
+        display: flex;
+        flex-direction: row;
+        width: 87.5%;
+        padding-left: 6.25%;
+        padding-right: 6.25%;
+        padding-top: 8%;
+        padding-bottom: 8%;
+        align-items: center;
         justify-content: space-between;
+        .footer__title {
+            width: 195px;
+            height: 22px;
+            font-size: 16px;
+            line-height: 16px;
+            color: #444444;
+            font-family: "Arial";
+        }
     }
  }
 }
 
 @include tablet {
-
+ .footer {
+    width: 87.5%;
+    padding-left: 6.25%;
+    padding-right: 6.25%;
+    height: 150px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    .footer__list {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .footer__point {
+            padding-top: 10%;
+            padding-bottom: 10%;
+            margin-left: 30px;
+        }
+    }
+    .footer__container {
+        display: flex;
+        width: 25%;
+        .footer__title {
+            width: 195px;
+            height: 22px;
+            font-size: 16px;
+            line-height: 16px;
+            color: #444444;
+            font-family: "Arial";
+        }
+    }
+ }
 }
 
 @include laptop {
