@@ -31,8 +31,10 @@
 // ---------------------------------
 
 //styles
-@import "header-media";
-@import "main-media";
+@import "media/header-media";
+@import "media/main-media-mobile";
+@import "media/main-media-tablet";
+@import "media/main-media-laptop";
 @import "media/footer-media";
 
 // ❗❗❗ запрещено использовать изображения в css, касается как jpg \ png, так и svg
