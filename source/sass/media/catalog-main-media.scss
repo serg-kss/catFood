@@ -1,0 +1,206 @@
+@include mobile {
+    .main__catalog {
+        display: flex;
+        flex-direction: column;
+        width: 87.5%;
+        padding-left: 6.25%;
+        padding-right: 6.25%;
+        .catalog__title {
+            width: 100%;
+            margin-bottom: 0;
+            text-align: start;
+            font-size: 36px;
+            line-height: 60px;
+            color: #111111;
+            font-weight: 400;
+            font-family: "Oswald";
+        }
+        .catalog__card {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            margin-top: 8%;
+            .catalog__container {
+                display: flex;
+                width: 100%;
+                .catalog__picture {
+                    width: 50%;
+                    height: fit-content;
+                }
+                .catalog__wrapper {
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                    .catalog__subTitle {
+                        width: 50%;
+                        height: 49px;
+                        font-size: 16px;
+                        line-height: 20px;
+                        text-transform: uppercase;
+                        color: #111111;
+                        font-weight: 400;
+                        font-family: "Oswald";
+                    }
+                    .catalog__list {
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        .catalog__point {
+                            width: 100%;
+                            height: fit-content;
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            .catalog__text {
+                                margin: 0;
+                                font-size: 12px;
+                                color: #444444;
+                                font-family: "Arial";
+                                width: 33.33%;
+                            }
+                        }
+                    }
+                }
+            }
+            .catalog__link {
+                width: 100%;
+                text-align: center;
+                font-size: 16px;
+                line-height: 20px;
+                text-transform: uppercase;
+                color: #ffffff;
+                font-weight: 400;
+                font-family: "Oswald";
+                text-align: center;
+                background-color: $color-apple;
+                padding-top: 5%;
+                padding-bottom: 5%;
+            }
+        }
+        .catalog__card--extraGoods {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+            .catalog__imgExtra {
+                width: 20%;
+            }
+            .catalog__subTitleExtra {
+                font-size: 16px;
+                line-height: 20px;
+                text-transform: uppercase;
+                color: #111111;
+                font-weight: 400;
+                font-family: "Oswald";
+                text-align: center;
+            }
+            .catalog__link--extra {
+                background-color: #f2f2f2;
+                color: #444444;
+            }
+        }
+    }
+    .main__options {
+        display: flex;
+        flex-direction: column;
+        width: 87.5%;
+        padding-left: 6.25%;
+        padding-right: 6.25%;
+        .options__title {
+            font-size: 24px;
+            line-height: 24px;
+            color: #111111;
+            font-weight: 400;
+            font-family: "Oswald";
+            position: relative;
+            &::after {
+                content: " ";
+                width: 120px;
+                height: 3px;
+                background-color: $color-apple;
+                position: absolute;
+                right: -10%;
+                top: 50%;
+            }
+        }
+        .options__card {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            border-bottom: 1px solid grey;
+            .options__subTitle {
+                font-size: 16px;
+                line-height: 16px;
+                text-transform: uppercase;
+                color: #222222;
+                font-weight: 400;
+                font-family: "Oswald";
+            }
+            .options__subTitle--border {
+                border-top: 1px solid grey;
+                padding-top: 5%; 
+            }
+            .options__list {
+                margin: 0;
+                padding: 0;
+                width: 100%;
+                .optins__point {
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    .options__text {
+                        font-size: 14px;
+                        line-height: 14px;
+                        color: #444444;
+                        font-family: "Arial";
+                    }
+                }
+            }
+            .options__link {
+                width: 100%;
+                background-color: $color-apple;
+                text-align: center;
+                padding-top: 5%;
+                padding-bottom: 5%;
+                font-size: 16px;
+                line-height: 20px;
+                text-transform: uppercase;
+                color: #ffffff;
+                font-weight: 400;
+                font-family: "Oswald";
+                margin-bottom: 5%;
+            }
+        }
+        .options__gift {
+            width: 100%;
+            height: 289px;
+            background-image: url("../../img/gift-photo-mobile.png");
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            .options__img {
+                margin-top: 5%;
+            }
+            .options__giftText {
+                padding-top: 10%;
+                width: 40%;
+                text-align: center;
+                font-size: 16px;
+                color: #ffffff;
+                font-family: "Arial";
+            }
+        }
+    }
+    
+}
+
+@include tablet {
+    
+}
+
+@include laptop {
+   
+}

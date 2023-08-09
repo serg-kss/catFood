@@ -1261,9 +1261,42 @@
                 position: absolute;
                 left: -170%;
                 top: 48%;
-
             }
         }
     }
-    
+    .main__address {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        .address__wrapper {
+            width: 35%;
+            position: absolute;
+            left: 5%;
+            top: 15%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 5%;
+            background-color: white;
+            .address__title {
+                width: 30%;
+                height: 76px;
+                font-size: 20px;
+                text-transform: uppercase;
+                color: #111111;
+                font-weight: 400;
+                font-family: "Oswald";
+            }
+            .address__text {
+                width: 30%;
+                height: 80px;
+                font-size: 16px;
+                color: #444444;
+                font-family: "Arial";
+            }
+        }
+        .address__map {
+            width: 100%;
+        }
+    }
 }
