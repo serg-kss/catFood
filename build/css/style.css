@@ -3368,6 +3368,276 @@ a {
     font-family: "Arial";
   }
 }
+@media (min-width: 768px) and (max-width: 1023px) {
+  .main__catalog {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 87.5%;
+    padding-left: 6.25%;
+    padding-right: 6.25%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .main__catalog .catalog__title {
+    width: 100%;
+    font-size: 60px;
+    line-height: 60px;
+    color: #111111;
+    font-weight: 400;
+    font-family: "Oswald";
+  }
+  .main__catalog .catalog__card {
+    width: 43%;
+    margin-top: 10%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(80%, #F5F5F5), color-stop(80%, white));
+    background: linear-gradient(to top, #F5F5F5 80%, white 80% 100%);
+  }
+  .main__catalog .catalog__card .catalog__container {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .main__catalog .catalog__card .catalog__container .catalog__wrapper {
+    width: 100%;
+  }
+  .main__catalog .catalog__card .catalog__container .catalog__wrapper .catalog__subTitle {
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #111111;
+    font-weight: 400;
+    font-family: "Oswald";
+  }
+  .main__catalog .catalog__card .catalog__container .catalog__wrapper .catalog__list {
+    width: 80%;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  .main__catalog .catalog__card .catalog__container .catalog__wrapper .catalog__list .catalog__point {
+    margin: 0;
+    padding: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    border-bottom: 1px solid grey;
+  }
+  .main__catalog .catalog__card .catalog__container .catalog__wrapper .catalog__list .catalog__point .catalog__text {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    line-height: 16px;
+    color: #444444;
+    font-family: "Arial";
+  }
+  .main__catalog .catalog__card .catalog__link {
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Oswald";
+    text-align: center;
+    width: 80%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background-color: #68b738;
+    margin: 10% 10% 15% 10%;
+  }
+  .main__catalog .catalog__card--extraGoods {
+    position: relative;
+    background: white;
+  }
+  .main__catalog .catalog__card--extraGoods .catalog__imgExtra {
+    margin-bottom: 10%;
+  }
+  .main__catalog .catalog__card--extraGoods .catalog__subTitleExtra {
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #111111;
+    font-weight: 400;
+    font-family: "Oswald";
+  }
+  .main__catalog .catalog__card--extraGoods .catalog__text--extra {
+    text-align: center;
+    margin-bottom: 40%;
+    color: #444444;
+  }
+  .main__catalog .catalog__card--extraGoods .catalog__link--extra {
+    position: absolute;
+    bottom: 0;
+    background: #F5F5F5;
+    color: #444444;
+  }
+  .main__options {
+    width: 100%;
+  }
+  .main__options .options__title {
+    width: 80%;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: start;
+    font-size: 36px;
+    line-height: 36px;
+    color: #111111;
+    font-weight: 400;
+    font-family: "Oswald";
+    position: relative;
+  }
+  .main__options .options__title::before {
+    content: " ";
+    width: 50px;
+    height: 3px;
+    background-color: #68b738;
+    position: absolute;
+    left: 0;
+    top: 20px;
+  }
+  .main__options .options__title::after {
+    content: " ";
+    width: 270px;
+    height: 3px;
+    background-color: #68b738;
+    position: absolute;
+    right: 0;
+    top: 20px;
+  }
+  .main__options .options__card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 80%;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  .main__options .options__card .options__subTitle {
+    width: 50%;
+    text-align: start;
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #222222;
+    font-weight: 400;
+    font-family: "Oswald";
+  }
+  .main__options .options__card .options__list {
+    width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: end;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+  }
+  .main__options .options__card .options__list .optins__point {
+    width: 75%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .main__options .options__card .options__list .optins__point .options__text {
+    font-size: 16px;
+    line-height: 20px;
+    color: #444444;
+    font-family: "Arial";
+  }
+  .main__options .options__card .options__link {
+    width: 100%;
+    background-color: #68b738;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Oswald";
+    text-align: center;
+  }
+  .main__options .options__gift {
+    width: 87.5%;
+    margin-left: 6.25%;
+    margin-right: 6.25%;
+    height: 200px;
+    background-image: url("../../img/gift-photo-tablet.png");
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin-top: 10%;
+  }
+  .main__options .options__gift .options__giftText {
+    width: 170px;
+    height: 70px;
+    font-size: 16px;
+    line-height: 20px;
+    color: #ffffff;
+    font-family: "Arial";
+    text-align: center;
+  }
+  .main__address {
+    background-color: #F5F5F5;
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+}
 /* @mixin hover-focus {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {
