@@ -13,108 +13,19 @@
   </head>
   <body>
     <header class="header">
-      <section class="header__wrapperLogo">
-        <picture class="header__logo">
-          <source srcset="./img/logo-desktop.png" media="(min-width: 769px)">
-          <img src="./img/logo-mobile.png" alt="logo">
+      <section class="header__container">
+        <picture class="pic">
+          <source media="(min-width: 768px)" srcset="./img/logo.svg">
+          <img class="header__logo" src="./img/logo-mob.svg" alt="logo">
         </picture>
-        <img class="header__title" src="./img/logo-mobile-header.png" alt="CAT ENERGY">
-        <a class="header__burger" href="#nav"><img src="./img/mobile-menu.png" alt="menu"></a>
+        <a class="header__title" height="18" width="101" href="#"><img src="./img/logo-title.svg" width="101" height="18" alt="CAT ENETGY"></a>
+        <a class="header__menuLink" href="#nav"><img src="./img/mobile-menu.png" alt="menu"></a>
       </section>
-      <section class="header__wrapperNav">
-        <ul id="nav" class="header__list">
-          <li class="header__point"><a class="header__link header__link--active" href="./index.html">Главная</a></li>
-          <li class="header__point"><a class="header__link" href="./catalog.html">Каталог Продукции</a></li>
-          <li class="header__point"><a class="header__link" href="#">Подбор программы</a></li>
-        </ul>
-      </section>
-    </header>
-    <main class="main">
-      <section class="main__wrapper">
-        <section class="banner">
-          <p class="banner__title">Функциональное<br>питание для котов</p>
-          <p class="banner__text">Занялся собой? Займись котом!</p>
-          <a class="banner__link" href="#">Подобрать программу</a>
-        </section>
-        <section class="food">
-          <picture class="food__picture">
-            <source media="(min-width: 1024px)" srcset="./img/index-can.png">
-            <source media="(min-width: 769px)" srcset="./img/index-can-tablet.png">
-            <img class="food__img" src="./img/index-can-mobile.png" alt="can">
-          </picture>
-          <a class="food__link" href="#">Подобрать программу</a>
-        </section>
-      </section>
-      <section class="main__content">
-        <section class="weight">
-          <p class="weight__title weight__title--down">Похудение</p>
-          <article class="weight__container weight__container--firstCat">
-            <p class="weight__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-            <a class="weight__link" href="#">Каталог Slim</a>
-          </article>
-        </section>
-        <section class="weight">
-          <p class="weight__title weight__title--up">Набор массы</p>
-          <article class="weight__container weight__container--secondCat">
-            <p class="weight__text">Заработать авторитет среди дворовых котов и даже собак?
-              Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-            <a class="weight__link" href="#">Каталог pro</a>
-          </article>
-        </section>
-      </section>
-      <section class="main__list">
-        <p class="list__title">Как это работает</p>
-        <ul class="list__list">
-          <li class="list__point list__point--leaf"><p id="ml1">Функциональное питание содержит только полезные питательные вещества.</p></li>
-          <li class="list__point list__point--flour"><p id="ml2">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p></li>
-          <li class="list__point list__point--fork"><p id="ml3">Замените один-два приема обычной еды на наше функциональное питание.</p></li>
-          <li class="list__point list__point--clock"><p id="ml4">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p></li>
-        </ul>
-      </section>
-      <section class="main__content main__content--example">
-        <article class="example__container">
-          <p class="example__title">Живой пример</p>
-          <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
-        </article>
-        <section class="example__wrapper">
-          <article>
-            <p class="example__data">5 кг</p>
-            <p class="example__subText" id="text1">снижение веса</p>
-          </article>
-          <article>
-            <p class="example__data">60 дней</p>
-            <p class="example__subText" id="text2">затрачено времени</p>
-          </article>
-        </section>
-        <p class="example__subTitlePrice">Затраты на питание: 15 000 грн.</p>
-        <picture class="example__pic">
-          <source media="(min-width: 769px)" srcset="./img/before-desktop.png">
-          <img class="example__img" src="./img/before-mobile.png" alt="cat">
-        </picture>
-        <article class="example__subWrapper">
-          <p class="example__subTitle example__subTitle--before">было</p>
-          <p class="example__subTitle example__subTitle--after">стало</p>
-        </article>
-      </section>
-      <section class="main__address">
-        <article class="address__wrapper">
-          <p class="address__title">приглашаем<br>к сотрудничеству<br>дилеров!</p>
-          <p class="address__text">ул. Большая<br>Пальмовая, д. 19/8<br>Майами</p>
-        </article>
-        <iframe class="address__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11002.068664929631!2d24.973395607796707!3d46.41862808727733!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x474b07cf3ff304b5%3A0xd8dee507ef786ca8!2sStrawhat%20Guesthouse!5e0!3m2!1sru!2sua!4v1691182062684!5m2!1sru!2sua" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </section>
-    </main>
-    <footer class="footer">
-      <a href="#"><img class="footer__picture" src="./img/logo-mobile-header.png" alt="CAT ENERGY"></a>
-      <ul class="footer__list">
-        <li class="footer__point"><a class="footer__link" href="#"><img src="./img/m-vk.png" alt="vk"></a></li>
-        <li class="footer__point"><a class="footer__link" href="#"><img src="./img/m-insta.png" alt="instagram"></a></li>
-        <li class="footer__point"><a class="footer__link" href="#"><img src="./img/m-fb.png" alt="facebook"></a></li>
+      <ul class="header__menu">
+        <li class="header__point"><a class="header__link" href="#">Главная</a></li>
+        <li class="header__point"><a class="header__link" href="#">Каталог продукции</a></li>
+        <li class="header__point"><a class="header__link" href="#">Подбор программы</a></li>
       </ul>
-      <section class="footer__container">
-        <p class="footer__title">HTML Academy</p>
-        <img src="./img/htmlacademy.png" alt="logo">
-      </section>
-    </footer>
+    </header>
   </body>
 </html>

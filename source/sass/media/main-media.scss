@@ -92,18 +92,26 @@
                 position: absolute;
                 left: 0;
             }
-        }
-        .weight__title--down::before {
-            content: " ";
+            &::after{
+            content: "../img/cat-1.png";
+            position: absolute;
+            left:0;
             width: 60px;
             height: 60px;
-            background-image: url("../img/cat-1.png");
-            position: absolute;
-            left: 0;
-            background-repeat: no-repeat;
-            background-position: center;
-            z-index: 100;
+
+            }
         }
+        // .weight__title--down::before {
+        //     content: " ";
+        //     width: 60px;
+        //     height: 60px;
+        //     background-image: url("../img/cat-1.png");
+        //     position: absolute;
+        //     left: 0;
+        //     background-repeat: no-repeat;
+        //     background-position: center;
+        //     z-index: 100;
+        // }
         .weight__title--up::before {
             content: " ";
             width: 60px;
@@ -115,6 +123,9 @@
             background-position: center;
             z-index: 100;
         }
+    
+
+
         .weight__container {
             display: flex;
             flex-direction: column;
