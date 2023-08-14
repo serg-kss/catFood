@@ -27,6 +27,7 @@
 
 @include tablet {
     .header__menu {
+        width: 60vw;
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -36,7 +37,7 @@
         .header__point {
             border-top: none;
             .header__link {
-                font-size: 18px;
+                font-size: 16px;
                 line-height: 25px;
                 color: $color-nero;
                 font-weight: 400;
@@ -57,7 +58,7 @@
             .header__link {
                 font-size: 20px;
                 line-height: 25px;
-                color: $color-nero;
+                color: $color-default-white;
                 font-weight: 400;
             }
         }

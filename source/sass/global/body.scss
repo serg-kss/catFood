@@ -3,6 +3,27 @@ body {
   height: fit-content;
   display: flex;
   flex-direction: column;
+  .greenCatDesktop {
+    width: 50vw;
+    height: 698px;
+    background-image: url("../../img/green-cat-extra.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+  }
+}
+
+@include laptop {
+  body {
+    .greenCatDesktop {
+    display: inline;
+    z-index: -1;
+    }
+  }
 }
 
 

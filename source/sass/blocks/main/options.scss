@@ -1,0 +1,15 @@
+.options {
+    display: flex;
+    flex-direction: column;
+}
+
+@include laptop {
+    .options {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 5vw;
+        padding-right: 5vw;
+        margin-top: 17vh;
+    }
+}
