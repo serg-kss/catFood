@@ -1,0 +1,19 @@
+.example {
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    padding-top: 5vh;
+    background: $color-winter-smoke;
+}
+
+@include tablet {
+    .example {
+        background: linear-gradient(
+        to top,
+        $color-winter-smoke 40%,
+        white 40% 100%
+        ) 
+    }
+}

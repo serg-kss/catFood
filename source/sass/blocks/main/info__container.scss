@@ -1,0 +1,96 @@
+.info__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    div {
+        width: 60px;
+        height: 60px;
+        background-color: $color-apple;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .info__text {
+        width: 60vw;
+        font-size: 14px;
+        line-height: 18px;
+        color: $color-charcoal;
+        font-family: "Arial";
+    }
+}
+
+@include tablet {
+    .info__container {
+        width: 33vw;
+        height: fit-content;
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+        position: relative;
+        padding-top: 5vh;
+        padding-bottom: 5vh;
+        background-repeat: no-repeat;
+        background-position: right;
+        div {
+            width: 80px;
+            height: 80px;
+            position: relative;
+            top: 0;
+            left: 0;
+        }
+        .info__text {
+            width: 80%;
+            font-size: 16px;
+        }
+    }
+    .info__container--first {
+        background-image: url("../../../img/background-number-one.png");
+    }
+    .info__container--second {
+        background-image: url("../../../img/background-number-two.png");
+    }
+    .info__container--third {
+        background-image: url("../../../img/background-number-three.png");
+    }
+    .info__container--fourth {
+        background-image: url("../../../img/background-number-four.png");
+    }
+}
+
+@include laptop {
+    .info__container {
+        width: 17vw;
+        height: fit-content;
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+        position: relative;
+        padding-top: 5vh;
+        padding-bottom: 5vh;
+        background-repeat: no-repeat;
+        background-position: right;
+        div {
+            width: 80px;
+            height: 80px;
+            position: relative;
+            top: 0;
+            left: 0;
+        }
+        .info__text {
+            width: 80%;
+            font-size: 16px;
+        }
+    }
+    .info__container--first {
+        background-image: url("../../../img/background-number-one.png");
+    }
+    .info__container--second {
+        background-image: url("../../../img/background-number-two.png");
+    }
+    .info__container--third {
+        background-image: url("../../../img/background-number-three.png");
+    }
+    .info__container--fourth {
+        background-image: url("../../../img/background-number-four.png");
+    }
+}

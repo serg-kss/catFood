@@ -1,0 +1,125 @@
+.example__container {
+    display: flex;
+    flex-direction: column;
+    .example__wrapperText {
+        display: flex;
+        flex-direction: column;
+        .example__title {
+            width: 280px;
+            font-size: 36px;
+            line-height: 40px;
+            color: $color-black;
+            font-weight: 400;
+            font-family: "Oswald";
+        }
+        .example__text {
+            width: 100%;
+            font-size: 14px;
+            line-height: 18px;
+            color: $color-charcoal;
+            font-family: "Arial";
+        }
+    }
+    .example__wrapperInfo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        section {
+            width: 100%;
+            padding-top: 3vh;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            article {
+                width: 124px;
+                height: 56px;
+                border-radius: 5px;
+                border: 1px solid lightgray;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+                .example__info {
+                    font-size: 24px;
+                    line-height: 24px;
+                    text-transform: uppercase;
+                    color: $color-black;
+                    font-weight: 400;
+                    font-family: "Oswald";
+                    text-align: center;
+                    margin: 0;
+                }
+                .example__subText {
+                    width: 56px;
+                    font-size: 12px;
+                    line-height: 12px;
+                    color: $color-charcoal;
+                    font-family: "Arial";
+                    text-align: center;
+                    padding-left: 8px;
+                    padding-right: 8px;
+                    background-color: $color-winter-smoke;
+                    position: absolute;
+                    bottom: -2vh;
+                    margin: 0;
+                }
+            }
+        }
+        .example__cost {
+            padding-top: 3vh;
+            font-size: 14px;
+            line-height: 20px;
+            text-transform: uppercase;
+            color: $color-black;
+            font-weight: 400;
+            font-family: "Oswald";
+            text-align: center;
+        }
+    }
+}
+
+@include tablet {
+    .example__container {
+        .example__wrapperText {
+            .example__title {
+                width: 50vw;
+                font-size: 60px;
+            }
+            .example__text {
+                font-size: 16px;
+            }
+        }
+        .example__wrapperInfo {
+            flex-direction: row;
+            justify-content: space-between;
+            section {
+                width: 57%;
+                article {
+                    width: 162px;
+                    height: 72px;
+                    .example__info {
+                        font-size: 30px;
+                        line-height: 37px;
+                    }
+                    .example__subText {
+                        width: 130px;
+                        font-size: 14px;
+                        line-height: 14px;
+                        bottom: -1vh;
+                        padding-left: 4px;
+                        padding-right: 4px;
+                        background-color: white;
+                    }
+                }
+            }
+            .example__cost {
+                width: 27%;
+                font-size: 20px;
+                line-height: 20px;
+                text-align: end;
+            }
+        }
+    }
+}
