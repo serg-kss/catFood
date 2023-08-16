@@ -24,6 +24,7 @@
             color: $color-black;
             font-weight: 400;
             font-family: "Oswald";
+            &:hover { border-bottom: 1px solid lightgray; }
         }
         .example__pointer {
             width: 23vw;
@@ -92,6 +93,7 @@
                     display: flex;
                     align-items: center;
                     justify-content: center;
+                    &:active {border: 1px solid $color-apple;}
                     &::after {
                         content: " ";
                         width: 7px;
@@ -155,6 +157,7 @@
                     display: flex;
                     align-items: center;
                     justify-content: center;
+                    &:active {border: 1px solid $color-apple;}
                     &::after {
                         content: " ";
                         width: 9px;

@@ -9,6 +9,26 @@
     .header__logo {
         width: 11vw;
         height: 5vh;
+        &:hover {
+            opacity: 0.800;
+        }
+        &:active {
+            opacity: 0.600;
+        }
+    }
+    .header__title {
+        width: 101px;
+        height: 18px;
+        img {
+            width: 101px;
+            height: 18px; 
+            &:hover {
+                opacity: 0.800;
+            }
+            &:active {
+                opacity: 0.600;
+            }
+        }
     }
 }
 

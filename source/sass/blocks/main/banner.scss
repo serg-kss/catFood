@@ -53,6 +53,8 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            &:hover { background-color: $color-limeade; }
+            &:active { color: $color-wh-opacity;}
         }
     }
     .banner__picture {

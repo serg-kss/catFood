@@ -426,6 +426,26 @@ a {
   width: 11vw;
   height: 5vh;
 }
+.header__container .header__logo:hover {
+  opacity: 0.8;
+}
+.header__container .header__logo:active {
+  opacity: 0.6;
+}
+.header__container .header__title {
+  width: 101px;
+  height: 18px;
+}
+.header__container .header__title img {
+  width: 101px;
+  height: 18px;
+}
+.header__container .header__title img:hover {
+  opacity: 0.8;
+}
+.header__container .header__title img:active {
+  opacity: 0.6;
+}
 
 @media (min-width: 768px) and (max-width: 1023px) {
   .header__container {
@@ -501,6 +521,12 @@ a {
   color: #111111;
   font-weight: 500;
   font-family: "Oswald";
+}
+.header__menu .header__point .header__link:hover {
+  opacity: 0.6;
+}
+.header__menu .header__point .header__link:active {
+  opacity: 0.302;
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
@@ -646,6 +672,12 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+.banner .banner__container .banner__link:hover {
+  background-color: #5EAA2F;
+}
+.banner .banner__container .banner__link:active {
+  color: rgba(255, 255, 255, 0.2);
 }
 .banner .banner__picture {
   z-index: 100;
@@ -1440,6 +1472,9 @@ a {
   font-weight: 400;
   font-family: "Oswald";
 }
+.example__cat .example__buttons .example__btn:hover {
+  border-bottom: 1px solid lightgray;
+}
 .example__cat .example__buttons .example__pointer {
   width: 23vw;
   height: 12px;
@@ -1529,6 +1564,9 @@ a {
         -ms-flex-pack: center;
             justify-content: center;
   }
+  .example__cat .example__buttons .example__pointer .example__innerPointer:active {
+    border: 1px solid #68b738;
+  }
   .example__cat .example__buttons .example__pointer .example__innerPointer::after {
     content: " ";
     width: 7px;
@@ -1606,6 +1644,9 @@ a {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .example__cat .example__buttons .example__pointer .example__innerPointer:active {
+    border: 1px solid #68b738;
   }
   .example__cat .example__buttons .example__pointer .example__innerPointer::after {
     content: " ";

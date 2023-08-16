@@ -21,6 +21,8 @@
             color: $color-black;
             font-weight: 500;
             font-family: "Oswald";
+            &:hover { opacity: 0.600; }
+            &:active { opacity: 0.302; }
         }
     }
 }
