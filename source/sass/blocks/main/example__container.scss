@@ -123,3 +123,43 @@
         }
     }
 }
+@include laptop {
+    .example__container {
+        width: 45vw;
+        .example__wrapperText {
+            .example__title {
+                width: 70%;
+                font-size: 60px;
+                line-height: 60px;
+            }
+            .example__text {
+                width: 70%;
+                font-size: 16px;
+            }
+        }
+        .example__wrapperInfo {
+            align-items: start;
+            justify-content: start;
+            section {
+                width: 60%;
+                article {
+                    width: 163px;
+                    height: 73px;
+                    .example__info {
+                        font-size: 30px;
+                    }
+                    .example__subText {
+                        width: 130px;
+                        font-size: 14px;
+                        line-height: 14px;
+                        bottom: -1vh;
+                    }
+                }
+            }
+            .example__cost {
+                font-size: 20px;
+                line-height: 20px;
+            }
+        }
+    }
+}

@@ -103,7 +103,68 @@
                 }
             }
         }
+    }
+}
 
-        
+@include laptop {
+    .example__cat {
+        width: 45vw;
+        .example__catPicture {
+            width: 100%;
+            display: flex;
+            justify-content: start;
+            position: relative;
+            &::after {
+                content: " ";
+                width: 50%;
+                height: 100%;
+                position: absolute;
+                background-image: url("../../../img/half-cat-right-laptop.png");
+                background-repeat: no-repeat;
+                background-position: left;
+                background-size: contain;
+                right: 0;
+                top: 0;
+            }
+            .example__img {
+                width: 50%;
+            }
+        }
+        .example__buttons {
+            width: 42vw;
+            .example__btn {
+                font-size: 20px;
+            }
+            .example__pointer {
+                width: 22vw;
+                height: 4px;
+                border: none;
+                border-radius: 9px;
+                background-color: lightgray;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 0;
+                .example__innerPointer {
+                    width: 36px;
+                    height: 36px;
+                    border-radius: 50%;
+                    background-color: white;
+                    border: 1px solid lightgray;
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    &::after {
+                        content: " ";
+                        width: 9px;
+                        height: 9px;
+                        border-radius: 50%;
+                        background-color: $color-apple;
+                        position: relative;
+                    }
+                }
+            }
+        }
     }
 }

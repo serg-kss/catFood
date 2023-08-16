@@ -17,3 +17,14 @@
         ) 
     }
 }
+
+@include laptop {
+    .example {
+        flex-direction: row;
+        background: linear-gradient(
+        to top,
+        $color-winter-smoke 63%,
+        white 63% 100%
+        ) 
+    }
+}
