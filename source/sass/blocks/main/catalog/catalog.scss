@@ -1,0 +1,31 @@
+.catalog {
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    .catalog__title {
+        width: 90vw;
+        text-align: start;
+        font-size: 36px;
+        color: $color-black;
+        font-weight: 400;
+        font-family: "Oswald";
+    }
+}
+
+@include tablet {
+    .catalog {
+        .catalog__title {
+            font-size: 60px;
+        }
+    }
+}
+
+@include laptop {
+    .catalog {
+        .catalog__title {
+            font-size: 60px;
+        }
+    }
+}

@@ -34,6 +34,9 @@
                 .socialList__img {
                     width: 5vw;
                     height: 5vh;
+                    &:not(:last-child){
+                        height: 6vh;
+                    }
                 }
             }
         }

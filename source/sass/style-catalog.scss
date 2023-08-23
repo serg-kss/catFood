@@ -1,0 +1,28 @@
+// Global
+// ---------------------------------
+
+@import "variables";
+@import "mixins";
+@import "global/fonts";
+@import "global/body";
+@import "global/list";
+
+// Blocks
+// ---------------------------------
+
+@import "blocks/main/catalog/card.scss";
+@import "blocks/main/catalog/cards.scss";
+@import "blocks/main/catalog/catalog.scss";
+@import "blocks/main/catalog/gift.scss";
+@import "blocks/main/catalog/main.scss";
+@import "blocks/main/catalog/options-list.scss";
+@import "blocks/main/catalog/options.scss";
+
+
+@import "blocks/header/header.scss";
+@import "blocks/header/header__container.scss";
+@import "blocks/header/header__menu.scss";
+
+@import "blocks/footer/footer.scss";
+
+@import "vendor/normalize";

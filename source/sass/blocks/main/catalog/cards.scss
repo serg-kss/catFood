@@ -1,0 +1,17 @@
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90vw;
+}
+
+@include tablet {
+    .cards {
+        justify-content: space-between;
+    }
+}
+
+@include laptop {
+    .cards {
+        justify-content: space-between;
+    }
+}

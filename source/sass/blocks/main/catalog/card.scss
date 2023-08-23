@@ -1,0 +1,249 @@
+.card {
+    width: 90vw;
+    margin-top: 3vh;
+    display: flex;
+    flex-direction: column;
+    .card__container {
+        width: 90vw;
+        display: flex;
+        .card__picture {
+            width: 45vw;
+        }
+        .card__info {
+            width: 45vw;
+            display: flex;
+            flex-direction: column;
+            .info__title {
+                width: 50%;
+                font-size: 16px;
+                text-transform: uppercase;
+                color: $color-black;
+                font-weight: 400;
+                font-family: "Oswald";
+            }
+            .info__list {
+                width: 100%;
+                .info__point {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    .info__text {
+                        font-size: 12px;
+                        color: $color-charcoal;
+                        font-family: "Arial";
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+    .card__link {
+        width: 90vw;
+        padding-top: 2vh;
+        padding-bottom: 2vh;
+        background-color: $color-apple;
+        font-size: 16px;
+        line-height: 20px;
+        text-transform: uppercase;
+        color: $color-default-white;
+        font-weight: 400;
+        font-family: "Oswald";
+        text-align: center;
+    }
+    .img__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .imgPlus {
+            height: 10vh;
+        }
+    }
+    
+    .card__titlePlus {
+        font-size: 16px;
+        line-height: 20px;
+        text-transform: uppercase;
+        color: $color-black;
+        font-weight: 400;
+        font-family: "Oswald";
+        text-align: center;
+    }
+    .card__textPlus {
+        font-size: 12px;
+        line-height: 16px;
+        color: $color-charcoal;
+        font-family: "Arial";
+        text-align: center;
+    }
+    .card__link--color {
+        background-color: $color-white-smoke;
+        color: $color-charcoal;
+    }
+}
+
+@include tablet {
+    .card {
+        width: 40vw;
+        background: linear-gradient(
+            to top,
+            $color-winter-smoke 80%,
+            $color-default-white 80%
+        );
+        margin-top: 2vh;
+        .card__container {
+            width: 40vw;
+            flex-direction: column;
+            .card__picture {
+                width: 40vw;
+                height: 200px;
+                display: flex;
+                align-items: end;
+                justify-content: center;
+            }
+            .card__info {
+                width: 40vw;
+                align-items: center;
+                justify-content: center;
+                .info__title {
+                    width: 50%;
+                    font-size: 20px;
+                    text-align: center;
+                }
+                .info__list {
+                    width: 34vw;
+                    padding-left: 3vw;
+                    padding-right: 3vw;
+                    .info__point {
+                        padding-top: 1vh;
+                        padding-bottom: 1vh;
+                        border-bottom: 1px solid $color-lightgrey;
+                        .info__text {
+                            font-size: 16px;
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+        }
+        .card__link {
+            width: 34vw;
+            margin-left: 3vw;
+            margin-right: 3vw;
+            margin-bottom: 2vh;
+            padding-top: 1vh;
+            padding-bottom: 1vh;
+            font-size: 16px;
+        }
+        .img__wrapper {
+            height: 25vh;
+            display: flex;
+            align-items: end;
+            justify-content: center;
+            .imgPlus {
+                width: 60px;
+                height: 60px;
+            }
+        }
+        .card__titlePlus {
+            font-size: 20px;
+            width: 50%;
+            margin: 0;
+        }
+        .card__textPlus {
+            font-size: 16px;
+            width: 60%;
+        }
+        .card__link--color {
+            background-color: $color-white-smoke;
+            color: $color-charcoal;
+        }
+    }
+    .card--background {
+        background: none;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+@include laptop {
+    .card {
+        width: 20vw;
+        background: linear-gradient(
+            to top,
+            $color-winter-smoke 85%,
+            $color-default-white 85%
+        );
+        .card__container {
+            width: 20vw;
+            flex-direction: column;
+            .card__picture {
+                width: 20vw;
+                height: 200px;
+                display: flex;
+                align-items: end;
+                justify-content: center;
+            }
+            .card__info {
+                width: 20vw;
+                align-items: center;
+                justify-content: center;
+                .info__title {
+                    width: 50%;
+                    font-size: 20px;
+                    text-align: center;
+                }
+                .info__list {
+                    width: 14vw;
+                    padding-left: 3vw;
+                    padding-right: 3vw;
+                    .info__point {
+                        padding-top: 1vh;
+                        padding-bottom: 1vh;
+                        border-bottom: 1px solid $color-lightgrey;
+                        .info__text {
+                            font-size: 16px;
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+        }
+        .card__link {
+            width: 14vw;
+            margin-left: 3vw;
+            margin-right: 3vw;
+            margin-bottom: 2vh;
+            padding-top: 1vh;
+            padding-bottom: 1vh;
+            font-size: 16px;
+        }
+        .img__wrapper {
+            height: 25vh;
+            display: flex;
+            align-items: end;
+            justify-content: center;
+            .imgPlus {
+                width: 60px;
+                height: 60px;
+            }
+        }
+        .card__titlePlus {
+            font-size: 20px;
+            width: 50%;
+            margin: 0;
+        }
+        .card__textPlus {
+            font-size: 16px;
+            width: 60%;
+        }
+        .card__link--color {
+            background-color: $color-white-smoke;
+            color: $color-charcoal;
+        }
+    }
+    .card--background {
+        background: none;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
