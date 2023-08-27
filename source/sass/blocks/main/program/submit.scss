@@ -1,0 +1,63 @@
+.submit {
+  display: flex;
+  flex-direction: column;
+  width: 90vw;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  padding-top: 4vh;
+  .submit__btn {
+    width: 90vw;
+    text-align: center;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: $color-default-white;
+    font-weight: 400;
+    font-family: "Oswald";
+    background-color: $color-apple;
+    padding-top: 1.5vh;
+    padding-bottom: 1.5vh;
+    border: none;
+  }
+  .submit__text {
+    font-size: 14px;
+    line-height: 16px;
+    color: $color-charcoal;
+    font-family: "Arial";
+    text-align: center;
+  }
+}
+
+@include tablet {
+  .submit {
+    flex-direction: row;
+    width: 80vw;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    .submit__btn {
+      width: 40vw;
+      font-size: 20px;
+    }
+    .submit__text {
+      width: 40vw;
+      font-size: 16px;
+      text-align: center;
+    }
+  }
+}
+
+@include laptop {
+  .submit {
+    flex-direction: row;
+    padding-bottom: 4vh;
+    .submit__btn {
+      width: 35vw;
+      font-size: 20px;
+    }
+    .submit__text {
+      width: 40vw;
+      font-size: 16px;
+      text-align: center;
+    }
+  }
+}

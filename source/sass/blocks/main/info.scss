@@ -1,47 +1,47 @@
 .info {
-    display: flex;
-    flex-direction: column;
-    width: 90vw;
-    padding-left: 5vw;
-    padding-right: 5vw;
-    padding-top: 5vh;
-    padding-bottom: 5vw;
-    .info__title {
-        width: 280px;
-        font-size: 36px;
-        line-height: 60px;
-        color: $color-black;
-        font-weight: 400;
-        font-family: "Oswald";
-        text-align: start;
-        margin-top: 0;
-        margin-bottom: 0;
-    }
+  display: flex;
+  flex-direction: column;
+  width: 90vw;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  padding-top: 5vh;
+  padding-bottom: 5vw;
+  .info__title {
+    width: 280px;
+    font-size: 36px;
+    line-height: 60px;
+    color: $color-black;
+    font-weight: 400;
+    font-family: "Oswald";
+    text-align: start;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
 }
 
 @include tablet {
-    .info {
-        width: 84vw;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        padding-right: 11vw;
-        .info__title {
-            width: 80vw;
-            font-size: 60px;
-        }
+  .info {
+    width: 84vw;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-right: 11vw;
+    .info__title {
+      width: 80vw;
+      font-size: 60px;
     }
+  }
 }
 
 @include laptop {
-    .info {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        .info__title {
-            width: 80vw;
-            font-size: 60px;
-            padding-bottom: 2vh;
-        }
+  .info {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .info__title {
+      width: 80vw;
+      font-size: 60px;
+      padding-bottom: 2vh;
     }
+  }
 }

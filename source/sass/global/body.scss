@@ -20,10 +20,8 @@ body {
 @include laptop {
   body {
     .greenCatDesktop {
-    display: inline;
-    z-index: -1;
+      display: inline;
+      z-index: -1;
     }
   }
 }
-
-

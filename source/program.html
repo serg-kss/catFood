@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
+  <body>
+    <header class="header">
+      <section class="header__container">
+        <picture>
+          <source media="(min-width: 768px)" srcset="./img/logo.svg" />
+          <img class="header__logo" src="./img/logo-mob.svg" alt="logo" />
+        </picture>
+        <a class="header__title" href="#"
+          ><img src="./img/logo-title.svg" alt="CAT ENETGY"
+        /></a>
+        <a class="header__menuLink" href="#nav"
+          ><img src="./img/mobile-menu.png" alt="menu"
+        /></a>
+      </section>
+      <ul class="header__menu">
+        <li class="header__point">
+          <a class="header__link" href="#">Главная</a>
+        </li>
+        <li class="header__point">
+          <a class="header__link" href="./catalog.html">Каталог продукции</a>
+        </li>
+        <li class="header__point">
+          <a class="header__link" href="#">Подбор программы</a>
+        </li>
+      </ul>
+    </header>
+    <main class="main">
+      <form class="program">
+        <article class="program__wrapper">
+          <p class="program__title">Подбор программы</p>
+          <p class="program__text">
+            Заполните анкету и мы подберем программу питания для вашего кота
+          </p>
+        </article>
+        <section class="program__container">
+          <section class="client">
+            <fieldset class="client__wrapper">
+              <label for="name" class="client__lable">Имя:*</label>
+              <input
+                id="name"
+                type="text"
+                class="client__input"
+                placeholder="  Барсик"
+              />
+            </fieldset>
+            <fieldset class="client__wrapper">
+              <label for="weight" class="client__lable">Вес (кг):*</label>
+              <input
+                id="weight"
+                type="text"
+                class="client__input"
+                placeholder="  7"
+              />
+            </fieldset>
+            <fieldset class="client__wrapper">
+              <label for="age" class="client__lable">Возраст (лет):</label>
+              <input
+                id="age"
+                type="text"
+                class="client__input"
+                placeholder="  7"
+              />
+            </fieldset>
+          </section>
+          <section class="order">
+            <fieldset class="order__wrapper">
+              <input
+                type="radio"
+                name="option"
+                id="down"
+                class="order__input"
+              />
+              <label for="down" class="order__lable">Похудение</label>
+            </fieldset>
+            <fieldset class="order__wrapper">
+              <input type="radio" name="option" id="up" class="order__input" />
+              <label for="up" class="order__lable">Набор массы</label>
+            </fieldset>
+            <fieldset class="order__wrapper">
+              <input
+                type="radio"
+                name="option"
+                id="advice"
+                class="order__input"
+              />
+              <label for="advice" class="order__lable"
+                >Не знаю (Нужен ваш совет)</label
+              >
+            </fieldset>
+          </section>
+        </section>
+        <section class="program__wrapper">
+          <p class="program__title program__title--size">
+            Контактные данные (владельца кота)
+          </p>
+          <section class="owner" action="" method="post">
+            <fieldset class="owner__wrapper owner__wrapper--envilope">
+              <label class="owner__text" for="email">E-mail:*</label>
+              <input
+                class="owner__input"
+                type="email"
+                id="email"
+                placeholder="  kuklachev@gmail.com"
+              />
+            </fieldset>
+            <fieldset class="owner__wrapper owner__wrapper--phone">
+              <label class="owner__text" for="phone">Телефон:*</label>
+              <input
+                class="owner__input"
+                type="text"
+                id="phone"
+                placeholder="  8 (960) 900-60-90"
+              />
+            </fieldset>
+          </section>
+        </section>
+        <section class="program__wrapper">
+          <p class="program__title program__title--size">Комментарий</p>
+          <section class="comment">
+            <textarea
+              class="cooment__area"
+              name="comment"
+              id=""
+              cols="30"
+              rows="10"
+              placeholder="  Расскажите обо всех повадках кота"
+            ></textarea>
+          </section>
+        </section>
+        <section class="program__wrapper">
+          <p class="program__title program__title--size">Дополнительно</p>
+          <section class="extra">
+            <fieldset class="extra__wrapper">
+              <label class="extra__lable" for="sugar">Сахарозаменитель</label>
+              <input
+                class="extra__input"
+                type="checkbox"
+                name="extra"
+                id="sugar"
+              />
+            </fieldset>
+            <fieldset class="extra__wrapper">
+              <label class="extra__lable" for="water">Питьевая вода</label>
+              <input
+                class="extra__input"
+                type="checkbox"
+                name="extra"
+                id="water"
+              />
+            </fieldset>
+            <fieldset class="extra__wrapper">
+              <label class="extra__lable" for="milk">Молоко</label>
+              <input
+                class="extra__input"
+                type="checkbox"
+                name="extra"
+                id="milk"
+              />
+            </fieldset>
+            <fieldset class="extra__wrapper">
+              <label class="extra__lable" for="vitamin">Витамины</label>
+              <input
+                class="extra__input"
+                type="checkbox"
+                name="extra"
+                id="vitamin"
+              />
+            </fieldset>
+          </section>
+        </section>
+        <section class="program__wrapper">
+          <section class="submit">
+            <button type="submit" class="submit__btn">Отправить заявку</button>
+            <p class="submit__text">* — Обязательные поля</p>
+          </section>
+        </section>
+      </form>
+      <section class="map">
+        <section class="map__address">
+          <p class="address__title">приглашаем к сотрудничеству дилеров!</p>
+          <p class="address__text">
+            ул. Большая Конюшенная, д. 19/8 г.Бердычев
+          </p>
+        </section>
+        <iframe
+          class="map"
+          src="https://www.google.com/maps/embed?pb=!1m21!1m12!1m3!1d82368.37491947736!2d23.842430866468245!3d49.823444992772565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m6!3e6!4m0!4m3!3m2!1d49.8233739!2d23.925120399999997!5e0!3m2!1suk!2sua!4v1692130716949!5m2!1suk!2sua"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </section>
+    </main>
+    <footer class="footer">
+      <a class="footer__logo" href="#"
+        ><img
+          src="./img/logo-title.svg"
+          width="101"
+          height="18"
+          alt="CAT ENETGY"
+      /></a>
+      <ul class="footer__socialList">
+        <li>
+          <a class="socialList__link" href="#"
+            ><img class="socialList__img" src="./img/vk.svg" alt="vk"
+          /></a>
+        </li>
+        <li>
+          <a class="socialList__link" href="#"
+            ><img class="socialList__img" src="./img/instagram.svg" alt="insta"
+          /></a>
+        </li>
+        <li>
+          <a class="socialList__link" href="#"
+            ><img
+              class="socialList__img"
+              src="./img/facebook.svg"
+              alt="facebook"
+          /></a>
+        </li>
+      </ul>
+      <article class="footer__wrapper">
+        <p class="footer__title">HTML Academy</p>
+        <img class="footer__sign" src="./img/sign.svg" alt="logo sign" />
+      </article>
+    </footer>
+  </body>
+</html>

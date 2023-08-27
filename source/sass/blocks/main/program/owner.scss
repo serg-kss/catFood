@@ -1,0 +1,75 @@
+.owner {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  width: 90vw;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  padding-top: 3vh;
+  .owner__wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 90vw;
+    position: relative;
+    .owner__text {
+      font-size: 16px;
+      line-height: 18px;
+      text-transform: uppercase;
+      color: $color-nero;
+      font-weight: 400;
+      font-family: "Oswald";
+      padding-right: 4vw;
+    }
+    .owner__input {
+      flex: 1;
+      border: 1px solid $color-very-light-grey;
+      padding-top: 1.7vh;
+      padding-bottom: 1.7vh;
+    }
+  }
+  .owner__wrapper--envilope {
+    &::after {
+      content: " ";
+      width: 17px;
+      height: 13px;
+      background-image: url("../../../../img/envilope.svg");
+      position: absolute;
+      right: 5vw;
+    }
+  }
+  .owner__wrapper--phone {
+    &::after {
+      content: " ";
+      width: 20px;
+      height: 20px;
+      background-image: url("../../../../img/phone.svg");
+      background-repeat: no-repeat;
+      position: absolute;
+      right: 5vw;
+    }
+  }
+}
+
+@include tablet {
+  .owner {
+    width: 80vw;
+    padding-left: 10vw;
+    .owner__wrapper {
+      width: 80vw;
+    }
+  }
+}
+
+@include laptop {
+  .owner {
+    flex-direction: row;
+    justify-content: space-between;
+    .owner__wrapper {
+      width: 40vw;
+      padding: 0;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+.comment {
+  width: 90vw;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  padding-top: 3vh;
+  .cooment__area {
+    width: 90vw;
+    height: 17vh;
+    border: 1px solid $color-very-light-grey;
+  }
+}
+
+@include tablet {
+  .comment {
+    width: 80vw;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    .cooment__area {
+      width: 80vw;
+    }
+  }
+}
+

@@ -1,126 +1,124 @@
 .options__list {
+  display: flex;
+  flex-direction: column;
+  width: 90vw;
+  .option {
     display: flex;
     flex-direction: column;
-    width: 90vw;
-    .option {
-        display: flex;
-        flex-direction: column;
-        border-top: 1px solid $color-lightgrey;
+    border-top: 1px solid $color-lightgrey;
+    margin-top: 2vh;
+    .option__container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      .option__title {
+        width: 90vw;
+        font-size: 16px;
+        line-height: 16px;
+        text-transform: uppercase;
+        color: $color-nero;
+        font-weight: 400;
+        font-family: "Oswald";
+        text-align: start;
+        margin: 0;
         margin-top: 2vh;
-        .option__container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            .option__title {
-                width: 90vw;
-                font-size: 16px;
-                line-height: 16px;
-                text-transform: uppercase;
-                color: $color-nero;
-                font-weight: 400;
-                font-family: "Oswald";
-                text-align: start;
-                margin: 0;
-                margin-top: 2vh;
-            }
-            .option__list {
-                width: 90vw;
-                .option__point {
-                    display: flex;
-                    align-items: center;
-                    justify-content: space-between;
-                }
-            }
+      }
+      .option__list {
+        width: 90vw;
+        .option__point {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
         }
-        .option__link {
-            width: 90vw;
-            padding-top: 2vh;
-            padding-bottom: 2vh;
-            background-color: #68b738;
-            font-size: 16px;
-            line-height: 20px;
-            text-transform: uppercase;
-            color: $color-default-white;
-            font-weight: 400;
-            font-family: "Oswald";
-            text-align: center;
-        }
+      }
     }
-    .option--border {
-        border-bottom: 1px solid $color-lightgrey;
+    .option__link {
+      width: 90vw;
+      padding-top: 2vh;
+      padding-bottom: 2vh;
+      background-color: #68b738;
+      font-size: 16px;
+      line-height: 20px;
+      text-transform: uppercase;
+      color: $color-default-white;
+      font-weight: 400;
+      font-family: "Oswald";
+      text-align: center;
     }
+  }
+  .option--border {
+    border-bottom: 1px solid $color-lightgrey;
+  }
 }
 
 @include tablet {
-    .options__list {
-        .option {
-            .option__container {
-                flex-direction: row;
-                .option__title {
-                    width: 40vw;
-                    font-size: 20px;
-                    padding-left: 5vw;
-                    
-                }
-                .option__list {
-                    width: 45vw;
-                    display: flex;
-                    align-items: center;
-                    justify-content: end;
-                    .option__point {
-                        width: 30vw;
-                        padding-right: 5vw;
-                    }
-                }
-            }
-            .option__link {
-                width: 80vw;
-                margin-left: 5vw;
-            }
+  .options__list {
+    .option {
+      .option__container {
+        flex-direction: row;
+        .option__title {
+          width: 40vw;
+          font-size: 20px;
+          padding-left: 5vw;
         }
-        
+        .option__list {
+          width: 45vw;
+          display: flex;
+          align-items: center;
+          justify-content: end;
+          .option__point {
+            width: 30vw;
+            padding-right: 5vw;
+          }
+        }
+      }
+      .option__link {
+        width: 80vw;
+        margin-left: 5vw;
+      }
     }
+  }
 }
 
 @include laptop {
-    .options__list {
-        width: 60vw;
+  .options__list {
+    width: 60vw;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0;
+    .option {
+      flex-direction: row;
+      margin: 0;
+      padding: 0;
+      align-items: center;
+      .option__container {
+        width: 40vw;
+        height: 12vh;
+        flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        margin-top: 0;
-        .option {
-            flex-direction: row;
-            margin: 0;
-            padding: 0;
-            align-items: center;
-            .option__container {
-                width: 40vw;
-                height: 12vh;
-                flex-direction: row;
-                align-items: center;
-                justify-content: space-between;
-                .option__title {
-                    width: 15vw;
-                    margin-top: 0;
-                }
-                .option__list {
-                    width: 20vw;
-                    .option__point {
-                        width: 15vw;
-                        margin-top: 0;
-                    }
-                }
-            }
-            .option__link {
-                width: 20vw;
-                height: 8vh;
-                padding: 0;
-                margin: 0;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-            }
+        .option__title {
+          width: 15vw;
+          margin-top: 0;
         }
+        .option__list {
+          width: 20vw;
+          .option__point {
+            width: 15vw;
+            margin-top: 0;
+          }
+        }
+      }
+      .option__link {
+        width: 20vw;
+        height: 8vh;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
     }
+  }
 }

@@ -1,67 +1,67 @@
 .header__container {
-    width: 90vw;
-    padding-left: 5vw;
-    padding-right: 5vw;
-    padding-top: 1vh;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    .header__logo {
-        width: 11vw;
-        height: 5vh;
-        &:hover {
-            opacity: 0.800;
-        }
-        &:active {
-            opacity: 0.600;
-        }
+  width: 90vw;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  padding-top: 1vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .header__logo {
+    width: 11vw;
+    height: 5vh;
+    &:hover {
+      opacity: 0.8;
     }
-    .header__title {
-        width: 101px;
-        height: 18px;
-        img {
-            width: 101px;
-            height: 18px; 
-            &:hover {
-                opacity: 0.800;
-            }
-            &:active {
-                opacity: 0.600;
-            }
-        }
+    &:active {
+      opacity: 0.6;
     }
+  }
+  .header__title {
+    width: 101px;
+    height: 18px;
+    img {
+      width: 101px;
+      height: 18px;
+      &:hover {
+        opacity: 0.8;
+      }
+      &:active {
+        opacity: 0.6;
+      }
+    }
+  }
 }
 
 @include tablet {
-    .header__container {
-        width: 30vw;
-        padding-top: 0;
-        padding-right: 0;
-        padding-top: 2vh;
-        .header__logo {
-            width: 25vw;
-            height: 8vh;
-        }
-        .header__title {
-            display: none;
-        }
-        .header__menuLink {
-            display: none;
-        }
+  .header__container {
+    width: 30vw;
+    padding-top: 0;
+    padding-right: 0;
+    padding-top: 2vh;
+    .header__logo {
+      width: 25vw;
+      height: 8vh;
     }
+    .header__title {
+      display: none;
+    }
+    .header__menuLink {
+      display: none;
+    }
+  }
 }
 
 @include laptop {
-    .header__container {
-        padding-top: 0;
-        padding-right: 0;
-        width: 50vw;
-        padding-top: 2vh;
-        .header__title {
-            display: none;
-        }
-        .header__menuLink {
-            display: none;
-        }
+  .header__container {
+    padding-top: 0;
+    padding-right: 0;
+    width: 50vw;
+    padding-top: 2vh;
+    .header__title {
+      display: none;
     }
+    .header__menuLink {
+      display: none;
+    }
+  }
 }

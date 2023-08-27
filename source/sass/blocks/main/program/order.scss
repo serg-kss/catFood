@@ -1,0 +1,81 @@
+.order {
+  display: flex;
+  flex-direction: column;
+  margin-top: 4vh;
+  width: 100vw;
+  border-top: 1px solid $color-very-light-grey;
+  border-bottom: 1px solid $color-very-light-grey;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+}
+
+.order__input {
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.order__lable {
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $color-nero;
+  font-weight: 400;
+  font-family: "Oswald";
+  padding-left: 5vw;
+  display: flex;
+  align-items: center;
+  &::before {
+    content: " ";
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+    border: 1px solid $color-very-light-grey;
+    margin-right: 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@include tablet {
+  .order {
+    border: 1px solid $color-very-light-grey;
+    width: 80vw;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    .order__lable {
+      font-size: 20px;
+      &::before {
+        width: 25px;
+        height: 25px;
+        margin-right: 3vw;
+      }
+    }
+  }
+}
+
+@include laptop {
+  .order {
+    width: 40vw;
+    margin-right: 5vw;
+    height: 18vh;
+    margin-top: 0;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-top: 0;
+    padding-bottom: 0;
+    border: 1px solid $color-very-light-grey;
+    .order__lable {
+      font-size: 20px;
+      &::before {
+        width: 28px;
+        height: 28px;
+        margin-right: 3vw;
+      }
+    }
+  }
+}

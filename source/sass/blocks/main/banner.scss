@@ -1,155 +1,159 @@
 .banner {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 80vh;
+  .banner__container {
+    width: 100vw;
     display: flex;
     flex-direction: column;
+    height: auto;
+    .banner__wrapper {
+      background-image: url("../../../img/green-cat.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 50vh;
+      .banner__title {
+        margin-bottom: 0;
+        width: 280px;
+        height: 110px;
+        font-size: 36px;
+        color: $color-default-white;
+        font-weight: 400;
+        font-family: "Oswald";
+        text-align: center;
+      }
+      .banner__text {
+        margin-top: 0;
+        font-size: 14px;
+        text-transform: uppercase;
+        color: $color-default-white;
+        font-weight: 400;
+        font-family: "Oswald";
+        text-align: center;
+      }
+    }
+    .banner__link {
+      background-color: $color-apple;
+      width: 90vw;
+      height: 5vh;
+      margin-left: 5vw;
+      margin-right: 5vw;
+      font-size: 14px;
+      line-height: 18px;
+      text-transform: uppercase;
+      color: $color-default-white;
+      font-weight: 400;
+      font-family: "Oswald";
+      position: absolute;
+      bottom: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      &:hover {
+        background-color: $color-limeade;
+      }
+      &:active {
+        color: $color-wh-opacity;
+      }
+    }
+  }
+  .banner__picture {
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: relative;
-    height: 80vh;
-    .banner__container {
-        width: 100vw;
-        display: flex;
-        flex-direction: column;
-        height: auto;
-        .banner__wrapper {
-            background-image: url("../../../img/green-cat.svg");
-            background-repeat: no-repeat;
-            background-size: cover;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            height: 50vh;
-            .banner__title {
-                margin-bottom: 0;
-                width: 280px;
-                height: 110px;
-                font-size: 36px;
-                color: $color-default-white;
-                font-weight: 400;
-                font-family: "Oswald";
-                text-align: center;
-            }
-            .banner__text {
-                margin-top: 0;
-                font-size: 14px;
-                text-transform: uppercase;
-                color: $color-default-white;
-                font-weight: 400;
-                font-family: "Oswald";
-                text-align: center;
-            }
-        }
-        .banner__link {
-            background-color: $color-apple;
-            width: 90vw;
-            height: 5vh;
-            margin-left: 5vw;
-            margin-right: 5vw;
-            font-size: 14px;
-            line-height: 18px;
-            text-transform: uppercase;
-            color: $color-default-white;
-            font-weight: 400;
-            font-family: "Oswald";
-            position: absolute;
-            bottom: 0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            &:hover { background-color: $color-limeade; }
-            &:active { color: $color-wh-opacity;}
-        }
-    }
-    .banner__picture {
-        z-index: 100;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: relative;
-        top: -15vh;
-    }
+    top: -15vh;
+  }
 }
 
 @include tablet {
-    .banner {
-        position: static;
-        height: auto;
-        .banner__container {
-            background-image: url("../../../img/can-mid.svg");
-            background-position: bottom;
-            background-repeat: no-repeat;
-            height: 115vh;
-            align-items: start;
-            justify-content: start;
-            .banner__wrapper {
-                padding-left: 18vw;
-                height: fit-content;
-                background-image: none;
-                display: flex;
-                align-items: start;
-                justify-content: start;
-                .banner__title {
-                    width: 60vw;
-                    font-size: 60px;
-                    color: $color-black;
-                    text-align: start;
-                    margin-bottom: 6vh;
-                }
-                .banner__text {
-                    font-size: 20px;
-                    color: $color-black;
-                }
-            }
-            .banner__link {
-                width: 34vw;
-                font-size: 20px;
-                position: relative;
-                margin-left: 18vw;
-                margin-right: 0;
-            }
+  .banner {
+    position: static;
+    height: auto;
+    .banner__container {
+      background-image: url("../../../img/can-mid.svg");
+      background-position: bottom;
+      background-repeat: no-repeat;
+      height: 115vh;
+      align-items: start;
+      justify-content: start;
+      .banner__wrapper {
+        padding-left: 18vw;
+        height: fit-content;
+        background-image: none;
+        display: flex;
+        align-items: start;
+        justify-content: start;
+        .banner__title {
+          width: 60vw;
+          font-size: 60px;
+          color: $color-black;
+          text-align: start;
+          margin-bottom: 6vh;
         }
-        .banner__picture {
-            display: none;
+        .banner__text {
+          font-size: 20px;
+          color: $color-black;
         }
+      }
+      .banner__link {
+        width: 34vw;
+        font-size: 20px;
+        position: relative;
+        margin-left: 18vw;
+        margin-right: 0;
+      }
     }
+    .banner__picture {
+      display: none;
+    }
+  }
 }
 
 @include laptop {
-    .banner {
-        flex-direction: row;
-        height: fit-content;
-        .banner__container {
-            width: 50vw;
-            .banner__wrapper {
-                background-image: none;
-                height: auto;
-                .banner__title {
-                    width: 420px;
-                    font-size: 60px;
-                    line-height: 60px;
-                    color: $color-black;
-                    text-align: start;
-                    margin-bottom: 6vh;
-                }
-                .banner__text {
-                    color: $color-black;
-                    font-size: 20px;
-                    width: 420px;
-                    text-align: start;
-                }
-            }
-            .banner__link {
-                 position: relative;
-                 width: 17vw;  
-                 margin-left: 10.5vw; 
-                 margin-right: 0;
-                 margin-top: 4vh;
-            }
+  .banner {
+    flex-direction: row;
+    height: fit-content;
+    .banner__container {
+      width: 50vw;
+      .banner__wrapper {
+        background-image: none;
+        height: auto;
+        .banner__title {
+          width: 420px;
+          font-size: 60px;
+          line-height: 60px;
+          color: $color-black;
+          text-align: start;
+          margin-bottom: 6vh;
         }
-        .banner__picture {
-            z-index: 100;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: static;
-            margin-left: -10vw;
+        .banner__text {
+          color: $color-black;
+          font-size: 20px;
+          width: 420px;
+          text-align: start;
         }
+      }
+      .banner__link {
+        position: relative;
+        width: 17vw;
+        margin-left: 10.5vw;
+        margin-right: 0;
+        margin-top: 4vh;
+      }
     }
+    .banner__picture {
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: static;
+      margin-left: -10vw;
+    }
+  }
 }

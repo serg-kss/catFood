@@ -1,0 +1,113 @@
+.program {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  .program__wrapper {
+    display: flex;
+    flex-direction: column;
+    .program__title {
+      font-size: 36px;
+      color: $color-black;
+      font-weight: 400;
+      font-family: "Oswald";
+      text-align: start;
+      width: 60vw;
+      margin-bottom: 0;
+      margin-top: 3vh;
+      padding-left: 5vw;
+    }
+    .program__title--size {
+      font-size: 24px;
+      width: 60vw;
+      display: flex;
+      align-items: center;
+      &::after {
+        content: " ";
+        position: absolute;
+        right: 0;
+        width: 30vw;
+        height: 0.5vh;
+        background-color: $color-apple;
+      }
+    }
+    .program__text {
+      font-size: 14px;
+      line-height: 18px;
+      text-transform: uppercase;
+      color: $color-black;
+      font-weight: 400;
+      font-family: "Oswald";
+      text-align: start;
+      width: 80vw;
+      padding-left: 5vw;
+      padding-right: 5vw;
+    }
+  }
+  .program__container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@include tablet {
+  .program {
+    .program__wrapper {
+      .program__title {
+        font-size: 60px;
+      }
+      .program__title--size {
+        font-size: 36px;
+        padding-left: 10vw;
+        width: 50vw;
+        &::before {
+          content: " ";
+          width: 5vw;
+          height: 0.5vh;
+          position: absolute;
+          left: 0;
+          background-color: $color-apple;
+        }
+      }
+      .program__text {
+        width: 45vw;
+        padding-left: 10vw;
+        padding-top: 2vh;
+        font-size: 20px;
+        line-height: 30px;
+      }
+    }
+  }
+}
+
+@include laptop {
+  .program {
+    .program__wrapper {
+      .program__title {
+        font-size: 60px;
+      }
+      .program__title--size {
+        font-size: 36px;
+        &::before {
+          content: " ";
+          width: 3vw;
+          height: 0.5vh;
+          position: absolute;
+          left: 0;
+          background-color: $color-apple;
+        }
+      }
+      .program__text {
+        width: 25vw;
+        padding-left: 5vw;
+        padding-top: 2vh;
+        font-size: 20px;
+        line-height: 30px;
+      }
+    }
+    .program__container {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+}

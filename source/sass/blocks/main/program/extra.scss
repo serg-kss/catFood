@@ -1,0 +1,82 @@
+.extra {
+  display: flex;
+  flex-direction: column;
+  width: 90vw;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  padding-top: 4vh;
+  .extra__wrapper {
+    width: 90vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    .extra__lable {
+      width: 90vw;
+      font-size: 16px;
+      line-height: 18px;
+      text-transform: uppercase;
+      color: $color-nero;
+      font-weight: 400;
+      font-family: "Oswald";
+      display: flex;
+      align-items: center;
+      &::before {
+        content: " ";
+        width: 30px;
+        height: 30px;
+        border: 1px solid $color-very-light-grey;
+        margin-right: 5vw;
+      }
+    }
+    .extra__input {
+      visibility: hidden;
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  }
+}
+
+@include tablet {
+  .extra {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80vw;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    align-items: center;
+    justify-content: space-between;
+    .extra__wrapper {
+      width: 35vw;
+      padding-right: 0;
+      .extra__lable {
+        font-size: 20px;
+        width: 35vw;
+        &::before {
+          content: " ";
+          width: 40px;
+          height: 40px;
+        }
+      }
+    }
+  }
+}
+
+@include laptop {
+  .extra {
+    flex-direction: row;
+    .extra__wrapper {
+      width: 20vw;
+      .extra__lable {
+        width: 20vw;
+        font-size: 20px;
+        &::before {
+          content: " ";
+          width: 40px;
+          height: 40px;
+        }
+      }
+    }
+  }
+}

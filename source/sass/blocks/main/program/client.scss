@@ -1,0 +1,67 @@
+.client {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  width: 90vw;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  padding-top: 3vh;
+  .client__wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 90vw;
+    .client__lable {
+      font-size: 16px;
+      line-height: 18px;
+      text-transform: uppercase;
+      color: $color-nero;
+      font-weight: 400;
+      font-family: "Oswald";
+      padding-right: 4vw;
+    }
+    .client__input {
+      flex: 1;
+      border: 1px solid $color-very-light-grey;
+      padding-top: 1.7vh;
+      padding-bottom: 1.7vh;
+      &:focus {
+        border: 2px solid $color-charcoal;
+      }
+    }
+  }
+}
+
+@include tablet {
+  .client {
+    width: 80vw;
+    padding-left: 10vw;
+    .client__wrapper {
+      width: 80vw;
+    }
+  }
+}
+
+@include laptop {
+  .client {
+    width: 40vw;
+    padding-left: 5vw;
+    padding-right: 0;
+    height: 18vh;
+    padding-top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    .client__wrapper {
+      width: 40vw;
+      padding: 0;
+      justify-content: space-between;
+      .client__lable {
+        font-size: 20px;
+      }
+    }
+  }
+}
